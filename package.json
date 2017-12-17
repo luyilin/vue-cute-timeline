@@ -1,0 +1,45 @@
+{
+  "name": "vue-timeline",
+  "version": "0.0.0",
+  "description": "My ace Vue component.",
+  "repository": {
+    "url": "luyilin/vue-timeline",
+    "type": "git"
+  },
+  "main": "dist/vue-timeline.common.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepublishOnly": "npm test && npm run build",
+    "test": "test-vue-app",
+    "build": "bili",
+    "example": "poi",
+    "build:example": "poi build"
+  },
+  "author": {
+    "name": "luyilin",
+    "email": "luyilin12@gmail.com"
+  },
+  "license": "MIT",
+  "poi": {
+    "entry": "example/index.js",
+    "dist": "example/dist",
+    "homepage": "./"
+  },
+  "bili": {
+    "format": [
+      "cjs",
+      "umd"
+    ]
+  },
+  "devDependencies": {
+    "bili": "^0.18.2",
+    "poi": "^9.3.10",
+    "test-vue-app": "^1.0.0",
+    "vue-test-utils": "^1.0.0-beta.2"
+  },
+  "dependencies": {
+    "color": "^2.0.1"
+  }
+}
