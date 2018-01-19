@@ -1,22 +1,36 @@
 <template>
   <div id="app">
-    <timeline :time="time" :content="content"></timeline>
+    <timeline>
+      <timeline-title>2018</timeline-title>
+      <timeline-item>
+        <p>minemine</p>
+        <p>testtttttt</p>
+      </timeline-item>
+      <timeline-item>eeww</timeline-item>
+      <timeline-item>eeww</timeline-item>
+      <timeline-title>2017</timeline-title>
+      <timeline-item>
+        <p>minemine</p>
+        <p>testtttttt</p>
+      </timeline-item>
+      <timeline-item>eeww</timeline-item>
+    </timeline>
   </div>
 </template>
 
 <script>
-import Timeline from '../src'
+import { Timeline, TimelineItem, TimelineTitle } from '../src'
 
 export default {
   data() {
     return {
-      time: '2017',
-      content: ['aa']
     }
   },
 
   components: {
-    Timeline
+    Timeline,
+    TimelineItem,
+    TimelineTitle
   }
 }
 </script>
