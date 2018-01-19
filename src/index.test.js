@@ -1,7 +1,7 @@
 import { mount } from 'vue-test-utils'
-import FooBar from './'
+import { Timeline } from './'
 
 test('it works', () => {
-  const wrapper = mount(FooBar)
+  const wrapper = mount(Timeline)
   expect(wrapper.isVueInstance()).toBe(true)
 })

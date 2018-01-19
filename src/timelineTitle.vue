@@ -1,5 +1,6 @@
 <template>
   <h3 class="timeline-title">
+    <div class="timeline-circle timeline-title-circle" :style="circleStyle"></div>
     <slot></slot>
   </h3>
 </template>
@@ -8,36 +9,39 @@
   export default {
     name: 'timelineTitle',
 
-    data () {
-      return {
-
+    props: {
+      color: {
+        type: String,
+        default: '#dbdde0'
+      },
+      hollow: {
+        type: Boolean,
+        default: false
       }
     },
+
+    computed: {
+      circleStyle () {
+        if (!this.color && !this.hollow) return
+        let style = {}
+        if (this.color) {
+          style = {
+            'border-color': this.color,
+            'background-color': this.color
+          }
+        }
+        if (this.hollow) {
+          style = Object.assign({}, style, {
+            'background-color': '#fff'
+          })
+        }
+        return style
+      }
+    }
+
   }
 </script>
 
-<style scoped>
-  .timeline-title {
-    position: relative;
-    display: inline-block;
-    /**
-     * BFC inline-block元素与其兄弟元素、子元素和父元素的外边距都不会折叠（包括其父元素和子元素）
-     */
-    color: var(--title);
-    cursor: crosshair;
-    margin: -.5em 0 15px 28px
-  }
-  .timeline-title:not(:first-child) {
-    margin-top: 28px;
-  }
-  .timeline-title:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: -36px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: var(--theme);
-  }
+<style>
+  @import "style.css";
 </style>

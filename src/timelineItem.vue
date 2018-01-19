@@ -1,5 +1,6 @@
 <template>
   <li class="timeline-item">
+    <div class="timeline-circle" :style="circleStyle"></div>
     <slot></slot>
   </li>
 </template>
@@ -23,29 +24,28 @@
       }
     },
 
+    computed: {
+      circleStyle () {
+        if (!this.color && !this.hollow) return
+        let style = {}
+        if (this.color) {
+          style = {
+            'border-color': this.color,
+            'background-color': this.color
+          }
+        }
+        if (this.hollow) {
+          style = Object.assign({}, style, {
+            'background-color': '#fff'
+          })
+        }
+        return style
+      }
+    }
+
   }
 </script>
 
-<style scoped>
-  .timeline-item {
-    position: relative;
-    margin: 1.5em 0 0 28px;
-    padding-bottom: 1.5em;
-    border-bottom: 1px dotted var(--theme);
-  }
-  .timeline-item:last-child {
-    border-bottom: none;
-  }
-  .timeline-item:before {
-    position: absolute;
-    content: '';
-    top: .5em;
-    left: -34px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border: 1px solid var(--theme);
-    background-color: var(--theme);
-    z-index: 1;
-  }
+<style>
+  @import "style.css";
 </style>
