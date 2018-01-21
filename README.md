@@ -1,4 +1,6 @@
-# vue-time-line
+# vue-cute-timeline
+
+[DEMO](https://luyilin.github.io/vue-cute-timeline/example/dist/)
 
 ## Introduction
 
