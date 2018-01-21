@@ -1,5 +1,7 @@
 # vue-cute-timeline
 
+[![NPM version](https://img.shields.io/npm/v/vue-cute-timeline.svg?style=flat)](https://npmjs.com/package/vue-cute-timeline) [![NPM downloads](https://img.shields.io/npm/dm/vue-cute-timeline.svg?style=flat)](https://npmjs.com/package/vue-cute-timeline) [![CircleCI](https://circleci.com/gh/luyilin/vue-cute-timeline/tree/master.svg?style=shield)](https://circleci.com/gh/luyilin/vue-cute-timeline/tree/master)
+
 [DEMO](https://luyilin.github.io/vue-cute-timeline/example/dist/)
 
 ## Introduction
@@ -25,6 +27,7 @@ yarn add vue-cute-timeline --save
 
 <script>
 import { Timeline, TimelineItem, TimelineTitle } from 'vue-cute-timeline'
+import 'vue-cute-timeline/dist/vue-cute-timeline.css'
 
 export default {
   components: {
