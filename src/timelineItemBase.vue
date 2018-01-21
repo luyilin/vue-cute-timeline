@@ -17,13 +17,18 @@
 
     computed: {
       circleStyle () {
-        if (!this.color && !this.hollow) return
+        if (!this.color && !this.lineColor && !this.hollow) return
         let style = {}
         if (this.color) {
           style = {
             'border-color': this.color,
             'background-color': this.color
           }
+        }
+        if (this.lineColor) {
+          style = Object.assign({}, style, {
+            'border-color': this.lineColor
+          })
         }
         if (this.hollow) {
           style = Object.assign({}, style, {

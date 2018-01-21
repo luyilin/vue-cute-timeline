@@ -1,19 +1,17 @@
 {
-  "name": "vue-timeline",
-  "version": "0.0.0",
-  "description": "My ace Vue component.",
+  "name": "vue-cute-timeline",
+  "version": "1.0.0",
+  "description": "A cute timeline component for Vue.js",
   "repository": {
-    "url": "luyilin/vue-timeline",
+    "url": "luyilin/vue-cute-timeline",
     "type": "git"
   },
-  "main": "dist/vue-timeline.common.js",
   "files": [
-    "dist"
+    "src"
   ],
   "scripts": {
-    "prepublishOnly": "npm test && npm run build",
+    "prepublishOnly": "npm run test",
     "test": "test-vue-app",
-    "build": "bili",
     "example": "poi",
     "build:example": "poi build"
   },
@@ -38,7 +36,5 @@
     "poi": "^9.3.10",
     "test-vue-app": "^1.0.0",
     "vue-test-utils": "^1.0.0-beta.2"
-  },
-  "dependencies": {
   }
 }
