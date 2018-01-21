@@ -1,18 +1,19 @@
 {
   "name": "vue-cute-timeline",
-  "version": "1.0.2",
+  "version": "1.0.8",
   "description": "A cute timeline component for Vue.js",
   "repository": {
     "url": "luyilin/vue-cute-timeline",
     "type": "git"
   },
+  "main": "dist/vue-cute-timeline.js",
   "files": [
-    "src"
+    "dist"
   ],
   "scripts": {
     "prepublishOnly": "npm run test && npm run build",
     "test": "test-vue-app",
-    "build": "poi build -c poi.config.js --component timeline && poi build -c poi.config.js --component timelineItem && poi build -c poi.config.js --component timelineTitle",
+    "build": "bili --plugin vue",
     "example": "poi",
     "build:example": "poi build"
   },
@@ -33,12 +34,12 @@
     ]
   },
   "devDependencies": {
-    "bili": "^0.18.2",
+    "bili": "^1.6.5",
     "poi": "^9.3.10",
     "test-vue-app": "^1.0.0",
     "vue-test-utils": "^1.0.0-beta.2"
   },
   "dependencies": {
-    "aoba": "^0.8.4"
+    "rollup-plugin-vue": "^3.0.0"
   }
 }

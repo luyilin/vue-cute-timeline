@@ -38,11 +38,5 @@
         return style
       }
     }
-
   }
 </script>
-
-<style>
-  @import "style.css";
-</style>
-

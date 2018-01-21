@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <timeline>
+    <timeline timelineTheme="lightblue">
       <timeline-title>人生三大难题</timeline-title>
       <timeline-item color="#9dd8e0">
         <p>早上吃啥</p>
