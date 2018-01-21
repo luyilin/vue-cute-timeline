@@ -1,5 +1,5 @@
 :root {
-  --timelineLine: #dbdde0;
+  --timelineTheme: #dbdde0;
 }
 
 * {
@@ -23,14 +23,14 @@
   top: 0;
   width: 1px;
   height: 100%;
-  background-color: var(--timelineLine);
+  background-color: var(--timelineTheme);
 }
 
 .timeline-item {
   position: relative;
   margin: 1.5em 0 0 28px;
   padding-bottom: 1.5em;
-  border-bottom: 1px dotted var(--timelineLine);
+  border-bottom: 1px dotted var(--timelineTheme);
 }
 .timeline-item:last-child {
   border-bottom: none;
@@ -42,8 +42,8 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  border: 1px solid var(--timelineLine);
-  background-color: var(--timelineLine);
+  border: 1px solid var(--timelineTheme);
+  background-color: var(--timelineTheme);
   z-index: 1;
 }
 

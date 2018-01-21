@@ -11,12 +11,10 @@
 
     props: {
       color: {
-        type: String,
-        default: '#dbdde0'
+        type: String
       },
       lineColor: {
-        type: String,
-        default: '#dbdde0'
+        type: String
       },
       hollow: {
         type: Boolean,

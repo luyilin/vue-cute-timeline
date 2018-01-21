@@ -9,15 +9,15 @@
     name: 'timeline',
 
     props: {
-      timelineLine: {
+      timelineTheme: {
         type: String,
         default: '#dbdde0'
       }
     },
 
     created() {
-      if (this.timelineLine) {
-        document.documentElement.style.setProperty('--timelineLine', this.timelineLine)
+      if (this.timelineTheme) {
+        document.documentElement.style.setProperty('--timelineTheme', this.timelineTheme)
       }
     }
   }
