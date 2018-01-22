@@ -23,7 +23,7 @@
   }
 </script>
 
-<style lang="scss">
+<style>
   :root {
     --timelineTheme: #dbdde0;
   }
