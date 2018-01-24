@@ -1,6 +1,6 @@
 {
   "name": "vue-cute-timeline",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "A cute timeline component for Vue.js",
   "repository": {
     "url": "luyilin/vue-cute-timeline",
@@ -13,7 +13,7 @@
   "scripts": {
     "prepublishOnly": "npm run test && npm run build",
     "test": "test-vue-app",
-    "build": "bili --plugin vue",
+    "build": "bili",
     "example": "poi",
     "build:example": "poi build"
   },
@@ -26,12 +26,6 @@
     "entry": "example/index.js",
     "dist": "example/dist",
     "homepage": "./"
-  },
-  "bili": {
-    "format": [
-      "cjs",
-      "umd"
-    ]
   },
   "devDependencies": {
     "bili": "^1.6.5",
