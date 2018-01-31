@@ -10,12 +10,12 @@
       <timeline-item color="#b0e6d1">keep going</timeline-item>
       <timeline-title color="#f2d7e1">2017</timeline-title>
       <timeline-item lineColor="#a6ade4">
-        <p>I write <a href="https://github.com/luyilin/Aoba">Aoba</a></p>
-        <p class="append">A tool to create a resume easier.</p>
+        <p>I wrote <a href="https://github.com/luyilin/Aoba">Aoba</a></p>
+        <p class="append">A tool to create a lovely resume more easily.</p>
       </timeline-item>
       <timeline-item :hollow="true">
         <p>And <a href="https://github.com/luyilin/Maltose">Maltose</a></p>
-        <p class="append">A cute emoticon keyboard which can generate random emoticon and no xss.</p>
+        <p class="append">A cute emoticon and emoji keyboard which can generate random emoticon or emoji and no xss.</p>
       </timeline-item>
     </timeline>
   </div>
