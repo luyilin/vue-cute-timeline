@@ -10,6 +10,11 @@
   "files": [
     "dist"
   ],
+  "keywords": [
+    "timeline",
+    "vue-timeline",
+    "vue-cute-timeline"
+  ],
   "scripts": {
     "prepublishOnly": "npm run test && npm run build",
     "test": "test-vue-app",
@@ -35,5 +40,8 @@
   },
   "dependencies": {
     "rollup-plugin-vue": "^3.0.0"
+  },
+  "peerDependencies": {
+    "vue": "^2.1.8"
   }
 }
