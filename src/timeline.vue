@@ -63,7 +63,7 @@
   }
   .timeline-circle {
     position: absolute;
-    top: .5em;
+    top: .45em;
     left: -34px;
     width: 10px;
     height: 10px;
@@ -82,14 +82,14 @@
      */
     color: #37414a;
     cursor: crosshair;
-    margin: -.5em 0 15px 28px
+    margin: -.2em 0 15px 28px
   }
   .timeline-title:not(:first-child) {
     margin-top: 28px;
   }
   .timeline-title-circle {
     left: -36px;
-    top: 0;
+    top: .15em;
     width: 16px;
     height: 16px;
   }
