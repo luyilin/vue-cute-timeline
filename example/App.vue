@@ -9,11 +9,12 @@
       <timeline-item color="#e6b6b0" :hollow="true">My first 100 stars on Github 🎉</timeline-item>
       <timeline-item color="#b0e6d1">keep going</timeline-item>
       <timeline-title color="#f2d7e1">2017</timeline-title>
-      <timeline-item lineColor="#a6ade4">
+      <timeline-item>
+        <img src="./assets/heart.png" class="icon-heart" slot="others">
         <p>I wrote <a href="https://github.com/luyilin/Aoba">Aoba</a></p>
-        <p class="append">A tool to create a lovely resume more easily.</p>
+        <p class="append">A tool to create a lovely resume just with a config file.</p>
       </timeline-item>
-      <timeline-item :hollow="true">
+      <timeline-item lineColor="#a6ade4">
         <p>And <a href="https://github.com/luyilin/Maltose">Maltose</a></p>
         <p class="append">A cute emoticon and emoji keyboard which can generate random emoticon or emoji and no xss.</p>
       </timeline-item>
@@ -38,10 +39,16 @@ export default {
     font-size: .8em;
     margin-top: 3px;
   }
+
   a {
     color: #bf6dcf;
     font-weight: bold;
     text-decoration: none;
   }
+
+  .icon-heart {
+    width: 20px;
+  }
+
   .github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
 </style>

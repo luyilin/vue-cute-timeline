@@ -73,6 +73,12 @@ Default: `false`
 
 Control the circle is hollow or not.
 
+#### slot
+
+Don't like circle? Now You can set the item shape to image、iconfont or anything you want.
+
+e.g. ```<img src="./assets/heart.png" class="icon-heart" slot="others">```
+
 ## License
 
 MIT &copy; [luyilin](https://github.com/luyilin)

@@ -2,6 +2,12 @@
   export default {
     name: 'timelineItemBase',
 
+    data () {
+      return {
+        slotOthers: false
+      }
+    },
+
     props: {
       color: {
         type: String
@@ -13,6 +19,10 @@
         type: Boolean,
         default: false
       }
+    },
+
+    mounted () {
+      this.slotOthers = !!this.$refs.others.innerHTML
     },
 
     computed: {
@@ -36,6 +46,9 @@
           })
         }
         return style
+      },
+      slotClass () {
+        return this.slotOthers ? 'timeline-others' : ''
       }
     }
   }

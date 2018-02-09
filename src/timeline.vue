@@ -93,4 +93,15 @@
     width: 16px;
     height: 16px;
   }
+  .timeline-others {
+    width: 40px;
+    height: auto;
+    top: .2em;
+    left: -48px;
+    line-height: 1;
+    padding: 2px 0;
+    text-align: center;
+    border: none;
+    background-color: #fff;
+  }
 </style>
