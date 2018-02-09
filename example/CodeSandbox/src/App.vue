@@ -10,7 +10,7 @@
       <timeline-item color="#b0e6d1">keep going</timeline-item>
       <timeline-title color="#f2d7e1">2017</timeline-title>
       <timeline-item>
-        <img src="../../assets/heart.png" class="icon-heart" slot="others">
+        <img src="./assets/heart.png" class="icon-heart" slot="others">
         <p>I wrote <a href="https://github.com/luyilin/Aoba">Aoba</a></p>
         <p class="append">A tool to create a lovely resume just with a config file.</p>
       </timeline-item>
