@@ -63,7 +63,7 @@
   }
   .timeline-circle {
     position: absolute;
-    top: .45em;
+    top: .3em;
     left: -34px;
     width: 10px;
     height: 10px;
