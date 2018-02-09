@@ -4,6 +4,8 @@
 
 [DEMO](https://luyilin.github.io/vue-cute-timeline/example/dist/)
 
+[![Edit luyilin/vue-cute-timeline: CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/luyilin/vue-cute-timeline/tree/master/example/CodeSandbox)
+
 ## Introduction
 
 A cute timeline component for Vue.js.
