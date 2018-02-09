@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "poi",
+    "build": "poi build"
+  },
+  "dependencies": {
+    "vue": "^2.5.13",
+    "vue-cute-timeline": "latest"
+  },
+  "devDependencies": {
+    "poi": "^9.6.13"
+  }
+}
