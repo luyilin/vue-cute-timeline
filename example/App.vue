@@ -38,6 +38,7 @@ export default {
   .append {
     font-size: .8em;
     margin-top: 3px;
+    color: #646C7C;
   }
 
   a {

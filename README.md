@@ -82,3 +82,5 @@ e.g. ```<img src="./assets/heart.png" class="icon-heart" slot="others">```
 ## License
 
 MIT &copy; [luyilin](https://github.com/luyilin)
+
+> [minemine.cc](https://minemine.cc) · GitHub [@luyilin](https://github.com/luyilin) · Twitter [@luyilin12](https://twitter.com/luyilin12)
