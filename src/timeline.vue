@@ -63,7 +63,7 @@
   }
   .timeline-circle {
     position: absolute;
-    top: .3em;
+    top: .28em;
     left: -34px;
     width: 10px;
     height: 10px;
@@ -78,11 +78,11 @@
     position: relative;
     display: inline-block;
     /**
-     * BFC inline-block元素与其兄弟元素、子元素和父元素的外边距都不会折叠（包括其父元素和子元素）
+     * BFC inline-block 元素与其兄弟元素、子元素和父元素的外边距都不会折叠（包括其父元素和子元素）
      */
     color: #37414a;
     cursor: crosshair;
-    margin: -.2em 0 15px 28px
+    margin: -.15em 0 15px 28px
   }
   .timeline-title:not(:first-child) {
     margin-top: 28px;

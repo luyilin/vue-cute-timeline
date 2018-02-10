@@ -10,7 +10,7 @@
       <timeline-item color="#b0e6d1">keep going</timeline-item>
       <timeline-title color="#f2d7e1">2017</timeline-title>
       <timeline-item>
-        <img src="./assets/heart.png" class="icon-heart" slot="others">
+        <img src="https://user-images.githubusercontent.com/12069729/36057805-80cfc3d2-0e4e-11e8-8851-6fda091ff389.png" class="icon-heart" slot="others">
         <p>I wrote <a href="https://github.com/luyilin/Aoba">Aoba</a></p>
         <p class="append">A tool to create a lovely resume just with a config file.</p>
       </timeline-item>
@@ -20,7 +20,7 @@
       </timeline-item>
     </timeline>
   </div>
-</template>
+</template>i
 
 <script>
 import { Timeline, TimelineItem, TimelineTitle } from 'vue-cute-timeline'

@@ -77,9 +77,16 @@ Control the circle is hollow or not.
 
 #### slot
 
-Don't like circle? Now You can set the item shape to image、iconfont or anything you want.
+Don't like circle? Now You can set it to image、iconfont or anything you want.
 
-e.g. ```<img src="./assets/heart.png" class="icon-heart" slot="others">```
+e.g. 
+
+```html
+<timeline-item>
+  <img src="https://user-images.githubusercontent.com/12069729/36057805-80cfc3d2-0e4e-11e8-8851-6fda091ff389.png"
+   class="icon-heart" slot="others">
+</timeline-item>
+```
 
 ## License
 
