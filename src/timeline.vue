@@ -1,5 +1,5 @@
 <template>
-  <ul class="timeline">
+  <ul class="timeline" ref="timeline">
     <slot></slot>
   </ul>
 </template>
@@ -15,25 +15,16 @@
       }
     },
 
-    created() {
-      if (this.timelineTheme) {
-        document.documentElement.style.setProperty('--timelineTheme', this.timelineTheme)
-      }
+    mounted() {
+      const timeline = this.$refs.timeline
+      timeline.style.setProperty('--timelineTheme', this.timelineTheme)
     }
   }
 </script>
 
 <style>
-  :root {
-    --timelineTheme: #dbdde0;
-  }
-
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
   .timeline {
+    padding: 0;
     position: relative;
     list-style: none;
     font-family: PingFangSC-light, Avenir, Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei, sans-serif;
