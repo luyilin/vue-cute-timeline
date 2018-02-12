@@ -18,7 +18,7 @@
   "scripts": {
     "prepublishOnly": "npm run test && npm run build && npm run build:example",
     "lint": "eslint . --ext .js --ext .vue",
-    "test": "test-vue-app",
+    "test": "npm run lint && test-vue-app",
     "build": "bili --debug",
     "example": "poi",
     "build:example": "poi build"
