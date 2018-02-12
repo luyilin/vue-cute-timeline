@@ -1,9 +1,9 @@
 <template>
   <h3 class="timeline-title">
     <div class="timeline-circle timeline-title-circle" :class="slotClass" :style="circleStyle" ref="others">
-      <slot name="others"></slot>
+      <slot name="others" />
     </div>
-    <slot></slot>
+    <slot />
   </h3>
 </template>
 

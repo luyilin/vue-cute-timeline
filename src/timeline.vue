@@ -1,12 +1,12 @@
 <template>
   <ul class="timeline" ref="timeline">
-    <slot></slot>
+    <slot />
   </ul>
 </template>
 
 <script>
   export default {
-    name: 'timeline',
+    name: 'Timeline',
 
     props: {
       timelineTheme: {

@@ -1,19 +1,15 @@
 <script>
   export default {
-    name: 'timelineItemBase',
-
-    data () {
-      return {
-        slotOthers: false
-      }
-    },
+    name: 'TimelineItemBase',
 
     props: {
       color: {
-        type: String
+        type: String,
+        default: ''
       },
       lineColor: {
-        type: String
+        type: String,
+        default: ''
       },
       hollow: {
         type: Boolean,
@@ -21,8 +17,10 @@
       }
     },
 
-    mounted () {
-      this.slotOthers = !!this.$refs.others.innerHTML
+    data () {
+      return {
+        slotOthers: false
+      }
     },
 
     computed: {
@@ -50,6 +48,10 @@
       slotClass () {
         return this.slotOthers ? 'timeline-others' : ''
       }
-    }
+    },
+
+    mounted () {
+      this.slotOthers = !!this.$refs.others.innerHTML
+    },
   }
 </script>

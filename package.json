@@ -17,6 +17,7 @@
   ],
   "scripts": {
     "prepublishOnly": "npm run test && npm run build && npm run build:example",
+    "lint": "eslint . --ext .js --ext .vue",
     "test": "test-vue-app",
     "build": "bili --debug",
     "example": "poi",
@@ -32,14 +33,29 @@
     "dist": "example/dist",
     "homepage": "./"
   },
+  "eslintConfig": {
+    "extends": [
+      "plugin:vue/recommended"
+    ],
+    "rules": {
+      "vue/max-attributes-per-line": [2, {
+        "singleline": 4,
+        "multiline": {
+          "max": 4,
+          "allowFirstLine": true
+        }
+      }]
+    }
+  },
+  "eslintIgnore": ["example/codesandbox"],
   "devDependencies": {
     "bili": "^2.2.0",
+    "eslint": "^4.17.0",
+    "eslint-plugin-vue": "^4.2.2",
     "poi": "^9.3.10",
+    "rollup-plugin-vue": "^3.0.0",
     "test-vue-app": "^1.0.0",
     "vue-test-utils": "^1.0.0-beta.2"
-  },
-  "dependencies": {
-    "rollup-plugin-vue": "^3.0.0"
   },
   "peerDependencies": {
     "vue": "^2.1.8"

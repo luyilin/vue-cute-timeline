@@ -1,9 +1,9 @@
 <template>
   <li class="timeline-item">
     <div class="timeline-circle" :class="slotClass" :style="circleStyle" ref="others">
-      <slot name="others"></slot>
+      <slot name="others" />
     </div>
-    <slot></slot>
+    <slot />
   </li>
 </template>
 
