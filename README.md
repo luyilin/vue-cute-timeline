@@ -43,7 +43,9 @@ export default {
 
 ### Timeline props
 
-#### timelineTheme
+You can use the props as hyphenated attributes too, as eslint recommend it.
+
+#### timelineTheme or timeline-theme
 
 Type: `string`<br>
 Default: `#dbdde0`
@@ -61,7 +63,7 @@ Default: `#dbdde0`
 
 Set the circle's and the circle's border color to custom colors.
 
-#### lineColor
+#### lineColor or line-color
 
 Type: `string`<br>
 Default: `#dbdde0`
