@@ -43,9 +43,9 @@ export default {
 
 ### Timeline props
 
-You can use the props as hyphenated attributes too, as eslint recommend it.
+It will be better to use hyphenated attributes instead of camelcase attributes.[The discussion](https://stackoverflow.com/questions/1696864/naming-class-and-id-html-attributes-dashes-vs-underlines) explained why. 
 
-#### timelineTheme or timeline-theme
+#### timeline-theme
 
 Type: `string`<br>
 Default: `#dbdde0`
@@ -63,7 +63,7 @@ Default: `#dbdde0`
 
 Set the circle's and the circle's border color to custom colors.
 
-#### lineColor or line-color
+#### line-color
 
 Type: `string`<br>
 Default: `#dbdde0`
