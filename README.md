@@ -43,7 +43,7 @@ export default {
 
 ### Timeline props
 
-It will be better to use hyphenated attributes instead of camelcase attributes.[The discussion](https://stackoverflow.com/questions/1696864/naming-class-and-id-html-attributes-dashes-vs-underlines) explained why. 
+It will be better to use hyphenated attributes instead of camelcase attributes. [The discussion](https://stackoverflow.com/questions/1696864/naming-class-and-id-html-attributes-dashes-vs-underlines) explained why. 
 
 #### timeline-theme
 
