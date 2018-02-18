@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/vue-cute-timeline.svg?style=flat)](https://npmjs.com/package/vue-cute-timeline) [![NPM downloads](https://img.shields.io/npm/dm/vue-cute-timeline.svg?style=flat)](https://npmjs.com/package/vue-cute-timeline) [![CircleCI](https://circleci.com/gh/luyilin/vue-cute-timeline/tree/master.svg?style=shield)](https://circleci.com/gh/luyilin/vue-cute-timeline/tree/master)
 
-[DEMO](https://luyilin.github.io/vue-cute-timeline/example/dist/)
+[DEMO](https://vue-cute-timeline.netlify.com/)
 
 [![Edit luyilin/vue-cute-timeline: codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/luyilin/vue-cute-timeline/tree/master/example/codesandbox)
 
