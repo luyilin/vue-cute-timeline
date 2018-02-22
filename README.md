@@ -47,7 +47,7 @@ It will be better to use hyphenated attributes instead of camelcase attributes. 
 
   The theme color of the timeline component.
 
-  Set the line's and circle's color to custom colors.
+  Set the line's and circle's color.
 
   ```
   Type: string
@@ -58,7 +58,7 @@ It will be better to use hyphenated attributes instead of camelcase attributes. 
 
 - `color`
 
-  Set the circle's and the circle's border color to custom colors.
+  Set the circle's and the circle's border color.
 
   ```
   Type: string
@@ -67,7 +67,7 @@ It will be better to use hyphenated attributes instead of camelcase attributes. 
 
 - `line-color`
 
-  Only set the circle's border color to custom colors.
+  Set only the circle's border color.
 
   ```
   Type: string
@@ -76,7 +76,7 @@ It will be better to use hyphenated attributes instead of camelcase attributes. 
 
 - `hollow`
 
-  Control the circle is hollow or not.
+  Control whether the circle is hollow or not.
 
   ```
   Type: boolean
@@ -88,7 +88,7 @@ It will be better to use hyphenated attributes instead of camelcase attributes. 
 
 - `others`
 
-  Don't like circle? Now You can set it to image、iconfont or anything you want.
+  Don't like the circle? You can set it to a image, iconfont or anything you want.
 
   ```html
   <timeline-item>
