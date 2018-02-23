@@ -39,54 +39,66 @@ export default {
 ```
 ## API
 
-### Timeline props
+### `<timeline>` props
 
 It will be better to use hyphenated attributes instead of camelcase attributes. [The discussion](https://stackoverflow.com/questions/1696864/naming-class-and-id-html-attributes-dashes-vs-underlines) explained why. 
 
-#### timeline-theme
+- `timeline-theme`
 
-Type: `string`<br>
-Default: `#dbdde0`
+  The theme color of the timeline component.
 
-The theme color of the timeline component.
+  Set the line's and circle's color.
 
-Set the line's and circle's color to custom colors.
+  ```
+  Type: string
+  Default: #dbdde0
+  ```
 
-### TimelineItem / TimelineTitle props
+### `<timeline-item>` / `<timeline-title>` props
 
-#### color
+- `color`
 
-Type: `string`<br>
-Default: `#dbdde0`
+  Set the circle's and the circle's border color.
 
-Set the circle's and the circle's border color to custom colors.
+  ```
+  Type: string
+  Default: #dbdde0
+  ```
 
-#### line-color
+- `line-color`
 
-Type: `string`<br>
-Default: `#dbdde0`
+  Set only the circle's border color.
 
-Only set the circle's border color to custom colors.
+  ```
+  Type: string
+  Default: #dbdde0
+  ```
 
-#### hollow
+- `hollow`
 
-Type: `boolean`<br>
-Default: `false`
+  Control whether the circle is hollow or not.
 
-Control the circle is hollow or not.
+  ```
+  Type: boolean
+  Default: false
+  ```
 
-#### slot
 
-Don't like circle? Now You can set it to image、iconfont or anything you want.
+### Slots
 
-e.g. 
+- `others`
 
-```html
-<timeline-item>
-  <img src="https://user-images.githubusercontent.com/12069729/36057805-80cfc3d2-0e4e-11e8-8851-6fda091ff389.png"
-   class="icon-heart" slot="others">
-</timeline-item>
-```
+  Don't like the circle? You can set it to a image, iconfont or anything you want.
+
+  ```html
+  <timeline-item>
+    <img
+        src="https://user-images.githubusercontent.com/12069729/36057805-80cfc3d2-0e4e-11e8-8851-6fda091ff389.png"
+        class="icon-heart"
+        slot="others"
+    />
+  </timeline-item>
+  ```
 
 ## License
 
