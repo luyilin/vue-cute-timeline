@@ -20,7 +20,7 @@ yarn add vue-cute-timeline --save
 <template>
   <timeline>
     <timeline-title>title</timeline-title>
-    <timeline-item color="#9dd8e0">item1</timeline-item>
+    <timeline-item bg-color="#9dd8e0">item1</timeline-item>
     <timeline-item :hollow="true">item2</timeline-item>
   </timeline>
 </template>
@@ -56,7 +56,7 @@ It will be better to use hyphenated attributes instead of camelcase attributes. 
 
 ### `<timeline-item>` / `<timeline-title>` props
 
-- `color`
+- `bg-color`
 
   Set the circle's and the circle's border color.
 
@@ -81,6 +81,15 @@ It will be better to use hyphenated attributes instead of camelcase attributes. 
   ```
   Type: boolean
   Default: false
+  ```
+- `font-color`
+
+  Set the timeline item or title font color.
+  Or you can set font color by add a className, as the content of the timeline item/title is a slot.
+
+  ```
+  Type: string
+  Default: #37414a
   ```
 
 

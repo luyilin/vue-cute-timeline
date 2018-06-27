@@ -3,7 +3,7 @@
     name: 'TimelineItemBase',
 
     props: {
-      color: {
+      bgColor: {
         type: String,
         default: ''
       },
@@ -14,7 +14,11 @@
       hollow: {
         type: Boolean,
         default: false
-      }
+      },
+      fontColor: {
+        type: String,
+        default: '#37414a'
+      },
     },
 
     data () {
@@ -25,12 +29,12 @@
 
     computed: {
       circleStyle () {
-        if (!this.color && !this.lineColor && !this.hollow) return
+        if (!this.bgColor && !this.lineColor && !this.hollow) return
         let style = {}
-        if (this.color) {
+        if (this.bgColor) {
           style = {
-            'border-color': this.color,
-            'background-color': this.color
+            'border-color': this.bgColor,
+            'background-color': this.bgColor
           }
         }
         if (this.lineColor) {
@@ -44,6 +48,11 @@
           })
         }
         return style
+      },
+      itemStyle () {
+        return {
+          'color': this.fontColor
+        }
       },
       slotClass () {
         return this.slotOthers ? 'timeline-others' : ''

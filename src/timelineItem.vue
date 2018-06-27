@@ -1,5 +1,5 @@
 <template>
-  <li class="timeline-item">
+  <li class="timeline-item" :style="itemStyle">
     <div class="timeline-circle" :class="slotClass" :style="circleStyle" ref="others">
       <slot name="others" />
     </div>

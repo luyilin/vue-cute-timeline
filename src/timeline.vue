@@ -28,7 +28,6 @@
     position: relative;
     list-style: none;
     font-family: PingFangSC-light, Avenir, Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei, sans-serif;
-    color: #37414a;
     -webkit-font-smoothing: antialiased;
     margin: 10px 20px;
   }
@@ -71,7 +70,6 @@
     /**
      * BFC inline-block 元素与其兄弟元素、子元素和父元素的外边距都不会折叠（包括其父元素和子元素）
      */
-    color: #37414a;
     cursor: crosshair;
     margin: -.15em 0 15px 28px
   }
