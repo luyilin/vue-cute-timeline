@@ -38,13 +38,16 @@
       "plugin:vue/recommended"
     ],
     "rules": {
-      "vue/max-attributes-per-line": [2, {
-        "singleline": 4,
-        "multiline": {
-          "max": 4,
-          "allowFirstLine": true
+      "vue/max-attributes-per-line": [
+        2,
+        {
+          "singleline": 4,
+          "multiline": {
+            "max": 4,
+            "allowFirstLine": true
+          }
         }
-      }]
+      ]
     }
   },
   "devDependencies": {
@@ -54,7 +57,7 @@
     "poi": "^9.3.10",
     "rollup-plugin-vue": "^3.0.0",
     "test-vue-app": "^1.0.0",
-    "vue-test-utils": "^1.0.0-beta.2"
+    "vue-test-utils": "^1.0.0-beta.11"
   },
   "peerDependencies": {
     "vue": "^2.1.8"

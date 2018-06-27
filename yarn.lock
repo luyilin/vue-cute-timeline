@@ -7973,7 +7973,7 @@ vue-template-validator@^1.1.5:
   dependencies:
     chalk "^1.1.1"
 
-vue-test-utils@^1.0.0-beta.2:
+vue-test-utils@^1.0.0-beta.11:
   version "1.0.0-beta.11"
   resolved "https://registry.yarnpkg.com/vue-test-utils/-/vue-test-utils-1.0.0-beta.11.tgz#41b7fa53e0061d16ecbe18cfeea197c909d4ab8a"
   dependencies:
