@@ -1,10 +1,10 @@
 <template>
-  <h3 class="timeline-title" :style="itemStyle">
+  <li class="timeline-title" :style="itemStyle">
     <div class="timeline-circle timeline-title-circle" :class="slotClass" :style="circleStyle" ref="others">
       <slot name="others" />
     </div>
     <slot />
-  </h3>
+  </li>
 </template>
 
 <script>
