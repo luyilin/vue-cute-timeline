@@ -31,7 +31,7 @@
         iconSize: {
             'sm' : {
                 'top': '.28em', 'left': '-34px', 'width': '10px', 'height': '10px'
-            }
+            },
             'md' : {
                 'top': '0em', 'left': '-39.5px', 'height': '20px', 'width': '20px'
             },
