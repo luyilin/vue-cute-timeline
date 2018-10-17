@@ -12,12 +12,17 @@
       timelineTheme: {
         type: String,
         default: '#dbdde0'
+      },
+      timelineBg: {
+        type: String,
+        default: '#fff',
       }
     },
 
     mounted() {
       const timeline = this.$refs.timeline
       timeline.style.setProperty('--timelineTheme', this.timelineTheme)
+      timeline.style.setProperty('--timelineBg', this.timelineBg)
     }
   }
 </script>
@@ -64,6 +69,10 @@
     box-sizing: content-box;
   }
 
+  .timeline-circle.hollow {
+    background-color: var(--timelineBg);
+  }
+
   .timeline-title {
     position: relative;
     display: inline-block;
@@ -91,6 +100,6 @@
     padding: 2px 0;
     text-align: center;
     border: none;
-    background-color: #fff;
+    background-color: var(--timelineBg);
   }
 </style>

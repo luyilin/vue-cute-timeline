@@ -54,6 +54,17 @@ It will be better to use hyphenated attributes instead of camelcase attributes. 
   Default: #dbdde0
   ```
 
+- `timeline-bg`
+
+  The background color of the timeline circle component (for hollow and others if needed).
+
+  Set the hollow circle's and other timeline symbol's default background color.
+
+  ```
+  Type: string
+  Default: #dbdde0
+  ```
+
 ### `<timeline-item>` / `<timeline-title>` props
 
 - `bg-color`
@@ -77,6 +88,7 @@ It will be better to use hyphenated attributes instead of camelcase attributes. 
 - `hollow`
 
   Control whether the circle is hollow or not.
+  _Note** When `hollow` cannot be used together with `bg-color`, unless you wish to change the hollow background color.
 
   ```
   Type: boolean
