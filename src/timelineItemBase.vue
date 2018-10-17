@@ -15,7 +15,7 @@
         type: Boolean,
         default: false
       },
-      iSize: {
+      iconSize: {
         type: String,
         default: ''
       },
@@ -28,14 +28,14 @@
     data () {
       return {
         slotOthers: false,
-        iconSize: {
-            'sm' : {
+        iconSizeData: {
+            'small' : {
                 'top': '.28em', 'left': '-34px', 'width': '10px', 'height': '10px'
             },
-            'md' : {
+            'medium' : {
                 'top': '0em', 'left': '-39.5px', 'height': '20px', 'width': '20px'
             },
-            'lg' : {
+            'large' : {
                 'top': '-0.5em', 'left': '-44px', 'height': '30px', 'width': '30px'
             }
         }
@@ -44,7 +44,7 @@
 
     computed: {
       circleStyle () {
-        if (!this.bgColor && !this.lineColor && !this.hollow && !this.iSize) return
+        if (!this.bgColor && !this.lineColor && !this.hollow && !this.iconSize) return
         let style = {}
         if (this.bgColor) {
           style = {
@@ -62,9 +62,9 @@
             'background-color': '#fff'
           })
         }
-        if (this.iSize) {
+        if (this.iconSizeData[this.iconSize]) {
           style = Object.assign({}, style,
-            this.iconSize[this.iSize]
+            this.iconSizeData[this.iconSize]
           )
         }
         return style
