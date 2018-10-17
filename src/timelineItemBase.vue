@@ -42,11 +42,6 @@
             'border-color': this.lineColor
           })
         }
-        if (this.hollow) {
-          style = Object.assign({}, style, {
-            'background-color': '#fff'
-          })
-        }
         return style
       },
       itemStyle () {
@@ -55,7 +50,15 @@
         }
       },
       slotClass () {
-        return this.slotOthers ? 'timeline-others' : ''
+        let className = '';
+        if (this.slotOthers) {
+          className = 'timeline-others'
+        }
+        else if (this.hollow){
+          className = 'hollow'
+        }
+
+        return className
       }
     },
 
