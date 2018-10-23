@@ -12,6 +12,9 @@
           <timeline-item bg-color="#e6b6b0" :hollow="true">My first 100 stars on Github 🎉</timeline-item>
           <timeline-item bg-color="#b0e6d1">keep going</timeline-item>
           <timeline-title bg-color="#f2d7e1">2017</timeline-title>
+          <timeline-item bg-color="#b0e6d1" icon-size="small">icon small size</timeline-item>
+          <timeline-item bg-color="#b0e6d1" icon-size="medium">icon medium size</timeline-item>
+          <timeline-item bg-color="#b0e6d1" icon-size="large">icon large size</timeline-item>
           <timeline-item>
             <img src="https://user-images.githubusercontent.com/12069729/36057805-80cfc3d2-0e4e-11e8-8851-6fda091ff389.png" class="icon-heart" slot="others">
             <p>I wrote <a href="https://github.com/luyilin/Aoba">Aoba</a></p>
@@ -30,6 +33,9 @@
           <timeline-item :hollow="true" font-color="#fff">My first 100 stars on Github 🎉</timeline-item>
           <timeline-item bg-color="#b0e6d1" font-color="#fff">keep going</timeline-item>
           <timeline-title bg-color="#f2d7e1" font-color="#fff">2017</timeline-title>
+          <timeline-item bg-color="#b0e6d1" font-color="#fff" icon-size="small">icon small size</timeline-item>
+          <timeline-item bg-color="#b0e6d1" font-color="#fff" icon-size="medium">icon medium size</timeline-item>
+          <timeline-item bg-color="#b0e6d1" font-color="#fff" icon-size="large">icon large size</timeline-item>
           <timeline-item>
             <img src="https://user-images.githubusercontent.com/12069729/36057805-80cfc3d2-0e4e-11e8-8851-6fda091ff389.png" class="icon-heart" slot="others">
             <p style="color: #fff;">I wrote <a href="https://github.com/luyilin/Aoba">Aoba</a></p>
