@@ -28,7 +28,7 @@
       </div>
       <div class="demo-theme dark">
         <timeline timeline-theme="white" timeline-bg="#3a3939">
-          <timeline-title>2018</timeline-title>
+          <timeline-title font-color="#fff">2018</timeline-title>
           <timeline-item bg-color="#9dd8e0" font-color="#e166ab">Welcome to the new year!</timeline-item>
           <timeline-item :hollow="true" font-color="#fff">My first 100 stars on Github 🎉</timeline-item>
           <timeline-item bg-color="#b0e6d1" font-color="#fff">keep going</timeline-item>
