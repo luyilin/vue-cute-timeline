@@ -1,26 +1,25 @@
 {
   "name": "vue-cute-timeline",
-  "version": "1.2.8",
+  "version": "1.2.10",
   "description": "A cute timeline component for Vue.js",
   "repository": {
     "url": "luyilin/vue-cute-timeline",
     "type": "git"
   },
-  "main": "dist/vue-cute-timeline.js",
+  "main": "dist/index.js",
   "files": [
     "dist"
   ],
-  "module": "bili",
   "keywords": [
     "timeline",
     "vue-timeline",
     "vue-cute-timeline"
   ],
   "scripts": {
-    "prepublishOnly": "npm run test && npm run build && npm run build:example",
+    "prepublishOnly": "npm run build && npm run build:example",
     "lint": "eslint . --ext .js --ext .vue",
     "test": "npm run lint && test-vue-app",
-    "build": "bili --no-babelrc",
+    "build": "bili --format cjs --format esm --no-babelrc",
     "example": "poi",
     "build:example": "poi build"
   },

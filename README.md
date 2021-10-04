@@ -27,6 +27,7 @@ yarn add vue-cute-timeline --save
 
 <script>
 import { Timeline, TimelineItem, TimelineTitle } from 'vue-cute-timeline'
+import 'vue-cute-timeline/dist/index.css'
 
 export default {
   components: {
