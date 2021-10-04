@@ -1,5 +1,5 @@
 <template>
-  <ul class="timeline" ref="timeline">
+  <ul ref="timeline" class="timeline">
     <slot />
   </ul>
 </template>

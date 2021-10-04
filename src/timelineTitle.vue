@@ -1,6 +1,6 @@
 <template>
-  <li class="timeline-title" :style="itemStyle">
-    <div class="timeline-circle timeline-title-circle" :class="slotClass" :style="circleStyle" ref="others">
+  <li :style="itemStyle" class="timeline-title">
+    <div ref="others" :style="circleStyle" :class="slotClass" class="timeline-circle timeline-title-circle">
       <slot name="others" />
     </div>
     <slot />

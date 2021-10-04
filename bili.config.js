@@ -1,7 +1,8 @@
 module.exports = {
-  plugin: [require('rollup-plugin-vue')(
-    {css: true}
-  )],
+  input: 'src/index.js',
+  plugins: {
+    "vue": true
+  },
   format: [
     "cjs",
     "umd"

@@ -10,6 +10,7 @@
   "files": [
     "dist"
   ],
+  "module": "bili",
   "keywords": [
     "timeline",
     "vue-timeline",
@@ -19,7 +20,7 @@
     "prepublishOnly": "npm run test && npm run build && npm run build:example",
     "lint": "eslint . --ext .js --ext .vue",
     "test": "npm run lint && test-vue-app",
-    "build": "bili --debug",
+    "build": "bili --no-babelrc",
     "example": "poi",
     "build:example": "poi build"
   },
@@ -51,11 +52,11 @@
     }
   },
   "devDependencies": {
-    "bili": "^2.2.0",
+    "bili": "^4.10.1",
     "eslint": "^4.17.0",
     "eslint-plugin-vue": "^4.2.2",
     "poi": "^9.3.10",
-    "rollup-plugin-vue": "^3.0.0",
+    "rollup-plugin-vue": "^5.0.0",
     "test-vue-app": "^1.0.0",
     "vue-test-utils": "^1.0.0-beta.11"
   },

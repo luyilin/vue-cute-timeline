@@ -104,7 +104,7 @@ It will be better to use hyphenated attributes instead of camelcase attributes. 
   Default: #37414a
   ```
 
-  - `icon-size`
+- `icon-size`
 
   Set the timeline item or title icon size.
   Control the size of the circle or of the image set using `slots="others"`.
